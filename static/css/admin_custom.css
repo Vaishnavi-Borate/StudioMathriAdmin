@@ -1,0 +1,338 @@
+/* =====================================================
+   STUDIO MATHRI - SIDEBAR FINAL OVERRIDE
+   ===================================================== */
+
+/* SIDEBAR WIDTH */
+.main-sidebar {
+    width: 220px !important;
+    min-width: 220px !important;
+    background: #343a40 !important;
+}
+
+/* MAIN CONTENT POSITION */
+body:not(.sidebar-collapse) .content-wrapper,
+body:not(.sidebar-collapse) .main-header,
+body:not(.sidebar-collapse) .main-footer {
+    margin-left: 220px !important;
+}
+
+/* BRAND AREA */
+.main-sidebar .brand-link {
+    width: 220px !important;
+    height: 60px !important;
+
+    display: flex !important;
+    align-items: center !important;
+
+    padding: 0 18px !important;
+
+    background: #343a40 !important;
+    color: #ffffff !important;
+
+    border-bottom: 1px solid #454b52 !important;
+}
+
+/* BRAND TEXT */
+.main-sidebar .brand-link .brand-text {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    color: #ffffff !important;
+}
+
+/* SIDEBAR CONTENT */
+.main-sidebar .sidebar {
+    padding: 8px 6px !important;
+}
+
+/* USER AREA */
+.main-sidebar .user-panel {
+    padding: 10px 8px !important;
+    margin-bottom: 6px !important;
+
+    border-bottom: 1px solid #454b52 !important;
+}
+
+/* USER NAME */
+.main-sidebar .user-panel .info,
+.main-sidebar .user-panel .info a {
+    color: #ffffff !important;
+    font-size: 13px !important;
+}
+
+/* NAVIGATION */
+.main-sidebar .nav-sidebar {
+    width: 100% !important;
+}
+
+/* NAV ITEM */
+.main-sidebar .nav-sidebar > .nav-item {
+    width: 100% !important;
+    margin-bottom: 3px !important;
+}
+
+/* NAV LINK */
+.main-sidebar .nav-sidebar .nav-link {
+    width: 100% !important;
+
+    padding: 9px 12px !important;
+    margin: 0 !important;
+
+    border-radius: 6px !important;
+
+    color: #d5d9dd !important;
+
+    font-size: 13px !important;
+    font-weight: 500 !important;
+
+    transition: all 0.2s ease !important;
+}
+
+/* ICON */
+.main-sidebar .nav-sidebar .nav-link .nav-icon {
+    width: 20px !important;
+
+    margin-right: 8px !important;
+
+    font-size: 14px !important;
+
+    color: #bfc5cb !important;
+}
+
+/* HOVER */
+.main-sidebar .nav-sidebar .nav-link:hover {
+    background: #414850 !important;
+    color: #ffffff !important;
+}
+
+/* ACTIVE */
+.main-sidebar .nav-sidebar .nav-link.active {
+    background: #4b5259 !important;
+    color: #ffffff !important;
+
+    box-shadow: none !important;
+}
+
+/* ACTIVE ICON */
+.main-sidebar .nav-sidebar .nav-link.active .nav-icon {
+    color: #ffffff !important;
+}
+
+/* SECTION HEADINGS */
+.main-sidebar .nav-sidebar .nav-header {
+    padding: 12px 12px 5px !important;
+
+    color: #aeb6be !important;
+
+    font-size: 11px !important;
+    font-weight: 600 !important;
+
+    text-transform: uppercase !important;
+    letter-spacing: 0.6px !important;
+}
+
+/* ARROWS */
+.main-sidebar .nav-sidebar .right {
+    color: #aeb6be !important;
+}
+
+/* DARK MODE SIDEBAR */
+body.studio-dark .main-sidebar {
+    width: 220px !important;
+    min-width: 220px !important;
+
+    background: #24282d !important;
+}
+
+body.studio-dark .main-sidebar .brand-link {
+    width: 220px !important;
+    background: #24282d !important;
+    border-color: #383d43 !important;
+}
+
+body.studio-dark .main-sidebar .nav-sidebar .nav-link {
+    color: #d5d9dd !important;
+}
+
+body.studio-dark .main-sidebar .nav-sidebar .nav-link:hover {
+    background: #343a40 !important;
+}
+
+body.studio-dark .main-sidebar .nav-sidebar .nav-link.active {
+    background: #454c54 !important;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    .main-sidebar {
+        width: 220px !important;
+        min-width: 220px !important;
+    }
+
+    .main-sidebar .brand-link {
+        width: 220px !important;
+    }
+
+    body:not(.sidebar-collapse) .content-wrapper,
+    body:not(.sidebar-collapse) .main-header,
+    body:not(.sidebar-collapse) .main-footer {
+        margin-left: 220px !important;
+    }
+}
+/* =====================================================
+   FIX FOR WHITE INNER ROWS & RECENT ACTIONS IN DARK MODE
+===================================================== */
+
+/* 1. App List Rows & Tables */
+body.studio-dark #content-main .module table,
+body.studio-dark #content-main .module table tr,
+body.studio-dark #content-main .module table td,
+body.studio-dark #content-main .module table th {
+    background-color: #292e33 !important;
+    color: #eeeeee !important;
+    border-color: #454b52 !important;
+}
+
+/* 2. Model List Link Containers */
+body.studio-dark #content-main .module .model-group,
+body.studio-dark #content-main .module table tr td:first-child {
+    background-color: #292e33 !important;
+}
+
+/* 3. Recent Actions Sidebar Cards */
+body.studio-dark .timeline-item,
+body.studio-dark .timeline-body,
+body.studio-dark #content-related .card,
+body.studio-dark #content-related .card-body,
+body.studio-dark #content-related .list-group-item {
+    background-color: #292e33 !important;
+    color: #eeeeee !important;
+    border-color: #454b52 !important;
+}
+
+/* 4. Fix for Text Colors Inside Module Rows */
+body.studio-dark #content-main .module a,
+body.studio-dark #content-related a {
+    color: #72a7ff !important;
+}
+
+body.studio-dark #content-related .text-muted,
+body.studio-dark #content-related .time {
+    color: #a0a6ac !important;
+}
+/* =====================================================
+   DASHBOARD TABS & MAP STYLES
+===================================================== */
+
+/* Tab Buttons Header */
+.stats-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.stats-tabs {
+    display: flex;
+    gap: 10px;
+    background: #f1f5f9;
+    padding: 4px;
+    border-radius: 8px;
+}
+
+.stat-tab-btn {
+    border: none;
+    background: transparent;
+    padding: 6px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #64748b;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.stat-tab-btn.active {
+    background: #ffffff;
+    color: #3c50e0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark Mode Overrides for Tabs */
+body.studio-dark .stats-header {
+    border-color: #383d43 !important;
+}
+
+body.studio-dark .stats-tabs {
+    background: #1e2227 !important;
+}
+
+body.studio-dark .stat-tab-btn {
+    color: #a0a6ac !important;
+}
+
+body.studio-dark .stat-tab-btn.active {
+    background: #292e33 !important;
+    color: #72a7ff !important;
+}
+
+/* Leaflet Map Dark Layer Fix */
+body.studio-dark .leaflet-tile {
+    filter: brightness(0.6) invert(1) contrast(3) hue-rotate(200deg) saturate(0.3) brightness(0.7);
+}
+/* =====================================================
+   NAVBAR SINGLE SEARCH BAR CLEANUP
+===================================================== */
+.navbar-nav .form-inline {
+    display: flex !important;
+    align-items: center !important;
+}
+
+/* Faqt pahila search input dakhva, bakiche hide kara */
+.navbar-nav .form-inline .input-group:not(:first-child) {
+    display: none !important;
+}
+
+/* Modern Single Search Bar Styling */
+.navbar-nav .form-inline .input-group:first-child input {
+    border-radius: 20px 0 0 20px !important;
+    border: 1px solid #e2e8f0 !important;
+    padding: 6px 14px !important;
+    font-size: 13px !important;
+    width: 220px !important;
+}
+
+.navbar-nav .form-inline .input-group:first-child .btn {
+    border-radius: 0 20px 20px 0 !important;
+    background-color: #3c50e0 !important;
+    color: white !important;
+    border: none !important;
+}
+
+body.studio-dark .navbar-nav .form-inline .input-group:first-child input {
+    background-color: #292e33 !important;
+    color: #ffffff !important;
+    border-color: #454b52 !important;
+}
+/* Dark Mode Override for Cards / Containers */
+body.dark .card,
+body.dark .bg-white,
+body.dark .statistics-box,
+body.dark #customerMap,
+body.dark .chart-wrapper {
+    background-color: #1e1e2d !important; /* Kiwa tumcha dark theme background color (#1a222c / #1f2937) */
+    color: #ffffff !important;
+    border-color: #2d2d3f !important;
+}
+
+/* Statistics Chart Container Fix */
+body.dark canvas {
+    background-color: transparent !important;
+}
+
+/* Header Text / Labels Fix */
+body.dark h1, body.dark h2, body.dark h3, body.dark h4, body.dark span, body.dark div {
+    color: #e2e8f0;
+}
