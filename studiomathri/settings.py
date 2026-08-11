@@ -59,7 +59,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'studio_mathri.urls'
+ROOT_URLCONF = 'studiomathri.urls'
 
 TEMPLATES = [
     {
@@ -78,7 +78,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'studio_mathri.wsgi.application'
+WSGI_APPLICATION = 'studiomathri.wsgi.application'
 
 
 # Database
