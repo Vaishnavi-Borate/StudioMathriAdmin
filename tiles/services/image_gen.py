@@ -8,6 +8,17 @@ from django.conf import settings
 from django.core.files.uploadedfile import InMemoryUploadedFile
 
 
+
+import os
+
+CF_ACCOUNT_ID = os.environ.get("CF_ACCOUNT_ID", "")
+CF_API_TOKEN = os.environ.get("CF_API_TOKEN", "")
+CF_IMAGE_MODEL = os.environ.get("CF_IMAGE_MODEL", "@cf/stabilityai/stable-diffusion-xl-base-1.0")
+CF_BASE_URL = os.environ.get(
+    "CF_BASE_URL", 
+    f"https://api.cloudflare.com/client/v4/accounts/{CF_ACCOUNT_ID}/ai/run"
+)
+
 STYLE_PREFIXES = {
     "realistic": "photorealistic, ultra realistic, 8k, ",
     "artistic": "artistic, creative, ",
