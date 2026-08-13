@@ -77,10 +77,10 @@ def _extract_text(result):
 
 class CloudflareMistralChat:
     def __init__(self):
-        self.account_id = settings.CF_ACCOUNT_ID
-        self.api_token = settings.CF_API_TOKEN
-        self.model = settings.CF_CHAT_MODEL
-        self.base_url = settings.CF_BASE_URL
+        self.account_id = getattr(settings, "CF_ACCOUNT_ID", "")
+        self.api_token = getattr(settings, "CF_API_TOKEN", "")
+        self.model = getattr(settings, "CF_CHAT_MODEL", "")
+        self.base_url = getattr(settings, "CF_BASE_URL", "")
 
         self.headers = {
             "Authorization": f"Bearer {self.api_token}",
